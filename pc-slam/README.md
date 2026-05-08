@@ -1,10 +1,15 @@
 # PC SLAM Processing Layer: High-Performance C++ Pipeline
 
 <p align="center">
-  <img src="../screenshots/pangolin.png" alt="Pangolin Viewer" width="45%" />
-  <img src="../screenshots/slam_reader.png" alt="SLAM Reader Log" width="45%" />
+  <img src="../screenshots/pangolin.png" alt="Pangolin Viewer" width="75%" />
   <br>
-  <em>Execution Logs: Real-time ORB-SLAM3 trajectory generation and tracking via C++ execution node.</em>
+  <em>Execution Logs: Real-time ORB-SLAM3 trajectory generation and tracking.</em>
+</p>
+
+<p align="center">
+  <img src="../screenshots/slam_reader.png" alt="SLAM Reader Log" width="75%" />
+  <br>
+  <em>Execution Logs: Real-time SLAM Reader Log via C++ execution node.</em>
 </p>
 
 This directory represents the high-performance computation tier, executing locally on the primary PC. It receives compressed hardware data from the Raspberry Pi over the local network via **ZeroMQ (ZMQ)** and translates this into trajectory generation utilizing **ORB-SLAM3**.
@@ -17,7 +22,7 @@ The logic operates using **POSIX Shared Memory (SysV IPC)**:
 1. **ZMQ Consumer (`bridge.py`)**: The Python node receives the compressed JPEG frames over the network via ZMQ from the Raspberry Pi, decodes them, and writes the raw image arrays directly into a designated POSIX shared memory block.
 
 <p align="center">
-  <img src="../screenshots/bridge.jpeg" alt="IPC Bridge Output" width="70%" />
+  <img src="../screenshots/bridge.jpeg" alt="IPC Bridge Output" width="75%" />
   <br>
   <em>System Verification: Memory segment allocation and JPEG stream decoding verified via bridge diagnostic output.</em>
 </p>
@@ -75,8 +80,13 @@ make -j$(nproc)
 Asynchronous data streams are integrated logically into unified pose estimates:
 
 <p align="center">
-  <img src="../screenshots/slam_bridge_imu.png" alt="IMU Pose Log" width="45%" />
-  <img src="../screenshots/slam_bridge_slam.png" alt="SLAM Pose Log" width="45%" />
+  <img src="../screenshots/slam_bridge_imu.png" alt="IMU Pose Log" width="75%" />
   <br>
-  <em>Real-time Telemetry: Consolidated visual tracking states mapped onto inertial IMU vectors for stable localization.</em>
+  <em>Real-time Telemetry: Inertial IMU vectors for stable localization.</em>
+</p>
+
+<p align="center">
+  <img src="../screenshots/slam_bridge_slam.png" alt="SLAM Pose Log" width="75%" />
+  <br>
+  <em>Real-time Telemetry: Consolidated visual tracking states.</em>
 </p>

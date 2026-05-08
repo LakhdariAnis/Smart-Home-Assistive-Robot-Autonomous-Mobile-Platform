@@ -1,9 +1,13 @@
 # Smart Home Assistive Robot: Autonomous Mobile Platform
 
 <p align="center">
-  <img src="screenshots/cararm3dmoel.jpg" alt="3D Model" width="100%" />
-  <br><br>
-  <img src="screenshots/arm.jpg" alt="Physical Hardware Integration" width="100%" />
+  <img src="screenshots/cararm3dmoel.jpg" alt="3D Model" width="75%" />
+  <br>
+  <em>System Verification: 3D model representing the autonomous agent.</em>
+</p>
+
+<p align="center">
+  <img src="screenshots/arm.jpg" alt="Physical Hardware Integration" width="75%" />
   <br>
   <em>System Verification: Complete hardware integration bridging the 3D model with the physical autonomous agent.</em>
 </p>
@@ -42,7 +46,7 @@ This mobile platform does not exist in isolation. It serves as the physical agen
 The system provides an intuitive interface for direct remote command override and tuning:
 
 <p align="center">
-  <img src="screenshots/wasd_panel.png" alt="Control Panel" width="60%" />
+  <img src="screenshots/wasd_panel.png" alt="Control Panel" width="75%" />
   <br>
   <em>Validation Logs: Web-based teleoperation panel established for WASD translation control and arm manipulation.</em>
 </p>

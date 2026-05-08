@@ -11,7 +11,7 @@ Inertial tracking relies on an MPU6050 6-DOF IMU polled at 50Hz via I2C. A major
 By continuously calculating an acceleration variance window, the system accurately detects when the robot is physically stationary and instantly hard-clamps the velocity vector to absolute zero. This entirely eliminates stationary tracking drift. While moving, heading (yaw) is derived via a complementary filter (alpha=0.98) on the Z-axis gyroscope, forming a reliable fallback odometry stream broadcasted via structured JSON.
 
 <p align="center">
-  <img src="../screenshots/imu_zmq.jpeg" alt="IMU ZMQ Status" width="60%" />
+  <img src="../screenshots/imu_zmq.jpeg" alt="IMU ZMQ Status" width="75%" />
   <br>
   <em>System Verification: MPU6050 zero-velocity calibration complete and ZMQ datagram stream broadcasting stably at 50Hz.</em>
 </p>
