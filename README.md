@@ -1,5 +1,12 @@
 # Smart Home Assistive Robot: Autonomous Mobile Platform
 
+<p align="center">
+  <img src="screenshots/cararm3dmoel.jpg" alt="3D Model" width="45%" />
+  <img src="screenshots/arm.jpg" alt="Physical Hardware Integration" width="45%" />
+  <br>
+  <em>System Verification: Complete hardware integration bridging the 3D model with the physical autonomous agent.</em>
+</p>
+
 ## Executive Summary: Distributed Computation Offloading
 
 This project demonstrates a highly optimized **Distributed Computation Offloading** architecture designed for autonomous robotics. By decoupling low-level hardware interactions from computationally expensive algorithms, the system maximizes performance across constrained and high-end hardware.
@@ -28,3 +35,13 @@ This mobile platform does not exist in isolation. It serves as the physical agen
 - **Bridging the Digital and Physical:** By rendering spatial data into a 3D web interface, users can visualize the robot's real-time position within their smart home.
 - **Interactive Command:** Users interact with the 3D map to define waypoints or tasks, which are asynchronously sent as navigation targets to the robot.
 - **Extensible Workflows:** Whether inspecting an area via the camera stream or retrieving an object utilizing the 4-DOF arm, the robot translates digital intentions into tangible physical actions within the collaborative ecosystem.
+
+## User Interface & Control
+
+The system provides an intuitive interface for direct remote command override and tuning:
+
+<p align="center">
+  <img src="screenshots/wasd_panel.png" alt="Control Panel" width="60%" />
+  <br>
+  <em>Validation Logs: Web-based teleoperation panel established for WASD translation control and arm manipulation.</em>
+</p>
