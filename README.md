@@ -1,8 +1,9 @@
 # Smart Home Assistive Robot: Autonomous Mobile Platform
 
 <p align="center">
-  <img src="screenshots/cararm3dmoel.jpg" alt="3D Model" width="45%" />
-  <img src="screenshots/arm.jpg" alt="Physical Hardware Integration" width="45%" />
+  <img src="screenshots/cararm3dmoel.jpg" alt="3D Model" width="100%" />
+  <br><br>
+  <img src="screenshots/arm.jpg" alt="Physical Hardware Integration" width="100%" />
   <br>
   <em>System Verification: Complete hardware integration bridging the 3D model with the physical autonomous agent.</em>
 </p>
