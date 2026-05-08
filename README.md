@@ -50,3 +50,8 @@ The system provides an intuitive interface for direct remote command override an
   <br>
   <em>Validation Logs: Web-based teleoperation panel established for WASD translation control and arm manipulation.</em>
 </p>
+
+## Future Development
+
+- **Path Planning Integration:** Implementing A* or D-Star Lite algorithms for autonomous navigation within the generated ORB-SLAM3 occupancy maps.
+
