@@ -1,0 +1,33 @@
+# --- Project Specific Hidden Folders ---
+old\ md\ \ files/
+# (If you prefer to move these out of the repo entirely, that's better, but this hides them)
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# --- C++ / Build System (pc-slam) ---
+pc-slam/build/
+pc-slam/bin/
+pc-slam/CMakeFiles/
+pc-slam/CMakeCache.txt
+pc-slam/cmake_install.cmake
+pc-slam/Makefile
+# The compiled executable
+pc-slam/slam_reader
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+# --- ROS / SLAM Artifacts ---
+*.log
+*.bag
+*.shm
+# Ignore any temporary map saves
+*.bin
+*.yaml.old
